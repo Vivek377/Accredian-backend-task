@@ -46,7 +46,7 @@ async function sendReferralMail(email, name, referredBy) {
     from: process.env.EMAIL,
     to: email,
     subject: "Referral Received",
-    text: `Hello ${name},\n\nYou have received a referral by your friend ${referredBy} for our course!\n\nBest regards,\nAccredian`,
+    text: `Hello ${name},\n\nYou have received a referral by your friend ${referredBy} for our course! Kindly lookup te course.\n\nBest regards,\nAccredian`,
   };
 
   return await transport.sendMail(mailOptions);
